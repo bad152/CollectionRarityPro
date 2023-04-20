@@ -1,0 +1,97 @@
+/*ЛогинСтили(Валидация)*/
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.section-title {
+    overflow: hidden;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-title::before {
+    margin-left: -90%;
+}
+
+.section-title::after {
+    margin-right: -90%;
+}
+
+.section-title::before, .section-title::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 90%;
+    height: 1px;
+    background: #000;
+    border: solid #fff;
+    border-width: 0 10px;
+}
+
+label.required::before {
+    content: '* ';
+    color: #F00;
+    font-weight: bold;
+}
+/*ЛогинСтили(Валидация)*/
+
+
+.login_body{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+}
+
+.a {
+    color: #7c9ab7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.p {
+    margin: 10px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 0 4px 16px #ccc;
+
+}
+
+.input {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    outline: none;
+}
+
+.button {
+    padding: 10px;
+    background: #e3e3e3;
+    border: unset;
+    cursor: pointer;
+}
+
+.msg {
+    border: 2px solid #ffa908;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logout {
+    color: #b7625c;
+}
+
+
